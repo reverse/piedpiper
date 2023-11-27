@@ -12,8 +12,8 @@ fn main() -> Result<(), Box<dyn Error>> {
     let encoded = encoder.encode()?;
     println!("Encoded value has {} bytes", encoded.len() / 8);
 
-    let decoded = encoder.decode(encoded)?;
-    println!("Decoded value is {}", decoded);
+    let _ = encoder.decode(encoded)?;
+    // println!("Decoded value is {}", decoded);
 
     Ok(())
 }
